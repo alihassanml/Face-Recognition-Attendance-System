@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: content-box;
+    background-color: rgb(13,17,23);
+    font-family: system-ui;
+    color: rgb(184,185,185);
+
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+.left{
+    width: 60%;
+    height: 100vh;
+    align-items: center;
+}
+.right{
+    background-color: rgb(33,38,45);
+    height: 100vh;
+    display:grid;
+    width: 40%;
+}
+.top{
+    height: 100%;
+    display:block;
+    width: 100%;
+}
+.bottom{
+    height: 100%;
+    width: 100%;
+}
+.heading{
+    margin-top: 50px;
+    margin-left: 134px;
+    font-size: 40px;
+}
+.video{
+    margin-left:100px;
+    margin-top: 20px;
+}
+.attendance{
+    margin-left: 150px;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.data{
+  background-color: rgb(43,49,55);
+    width: 400px;
+    height: 200px;
+    overflow-x: auto;
+    margin-top: 10px;
+    padding: 20px;
+    color: rgb(161, 156, 156);
+    margin-left: 150px;
+}
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    width: 400px;
+    padding: 15px 162.5px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 150px;
+    font-size: 20px;
+}
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+  .name{
+    margin-left: 150px;
+    background-color:rgb(43,49,55) ;
+    border: none;
+    width: 430px;
+    outline: none;
+    color: rgb(206, 204, 204);
+    padding-left: 10px;
+
+    height: 40px;
+    border-bottom: 2px solid rgb(27, 30, 34);
+  }
+  #file-upload{
+    margin-left: 150px;
+    width: 440px;
+    height: 200px;
+    margin-top: 10px;
+    background-color:rgb(43,49,55);
+    color: rgb(29, 33, 37);
+    border: 1px dashed rgb(100, 97, 97);
+  }
+  ::-webkit-file-upload-button{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.521)), 
+    url('icon-removebg-preview.png');
+background-size: cover;
+background-repeat: no-repeat;
+color: transparent;
+border: none;
+margin-top: 14%;
+margin-left: 27%;
+width: 80px;
+height: 80px;
+background-position: center;
+border-radius: 50%;
+cursor: pointer;
+text-align: center;
+font-weight: bold;
+font-size: 14px;
+
+  }
+  .image-submit{
+    height: 45px;
+    width: 140px;
+    margin-left: 240px;
+    font-size: large;
+    margin-top: 2px;
+    background-color: DodgerBlue;
+    border: none;
+    cursor: pointer;
+  }
+  .live-submit{
+    background-color: DodgerBlue;
+    width: 140px;
+    border: none;
+    font-size: large;
+    height: 45px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .open{
+    width: 140px;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+    background-color: DodgerBlue;
+    height: 45px;
+    margin-left: 290px;
+    margin-top: 10px;
+  }
+  .stop{
+    border: none;
+    width: 140px;
+    font-size: large;
+    background-color: DodgerBlue;
+    cursor: pointer;
+    height: 45px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .add-image{
+    margin-left: 150px;
+  }

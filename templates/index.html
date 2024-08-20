@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Video Stream</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://kit.fontawesome.com/9d9b446610.js" crossorigin="anonymous"></script>
+    <script>
+        function startCamera() {
+            fetch('/start_video')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.message === 'Video started') {
+                        document.getElementById('video').src = '/video_feed';
+                    }
+                });
+        }
+
+        function stopCamera() {
+            fetch('/stop_video')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.message === 'Video stopped') {
+                        document.getElementById('video').src = '';
+                    }
+                });
+        }
+
+        async function submitForm(event) {
+            event.preventDefault();
+            const form = document.querySelector('form');
+            const formData = new FormData(form);
+
+            const response = await fetch('/upload_image', {
+                method: 'POST',
+                body: formData
+            });
+
+            const result = await response.json();
+            alert(result.message); // Display success message
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1 class="heading">Attendance System Face Detection</h1>
+            <img id="video" class="video" style="width:730px; height: 580px;" />
+            <button onclick="startCamera()" class="open">Open Camera</button>
+            <button onclick="stopCamera()" class="stop">Stop</button>
+        </div>
+        <div class="right">
+            <div class="top">
+                <h2 class="attendance">Attendance</h2>
+                <div class="data">{{ attendance_data | safe }}</div>
+                <a href="../Attendance.txt" class="btn" download><i class="fa fa-download"></i> Download</a>
+            </div>
+            <div class="bottom">
+                <form class="form" style="display: grid;" onsubmit="submitForm(event)" enctype="multipart/form-data">
+                    <h2 class="add-image">Add New Image</h2>
+                    <input type="text" name="name" class="name" placeholder="Enter Your Name" required autocomplete="off">
+                    <input type="file" name="file" id="file-upload" required>
+                    <ul>
+                        <button class="image-submit" type="submit">Submit</button>
+                        <button class="live-submit">Choose Live</button>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
