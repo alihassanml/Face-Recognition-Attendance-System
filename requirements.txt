@@ -20,3 +20,4 @@ wincertstore
 fastapi
 uvicorn
 opencv-python
+gunicorn

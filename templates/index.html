@@ -44,7 +44,7 @@
     <div class="main">
         <div class="left">
             <h1 class="heading">Attendance System Face Detection</h1>
-            <img id="video" class="video" style="width:730px; height: 580px;" />
+            <img id="video" class="video" style="width:75%; height: 70%;" />
             <button onclick="startCamera()" class="open">Open Camera</button>
             <button onclick="stopCamera()" class="stop">Stop</button>
         </div>
@@ -59,7 +59,7 @@
                     <h2 class="add-image">Add New Image</h2>
                     <input type="text" name="name" class="name" placeholder="Enter Your Name" required autocomplete="off">
                     <input type="file" name="file" id="file-upload" required>
-                    <ul>
+                    <ul style="display: flex;">
                         <button class="image-submit" type="submit">Submit</button>
                         <button class="live-submit">Choose Live</button>
                     </ul>
@@ -67,5 +67,6 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

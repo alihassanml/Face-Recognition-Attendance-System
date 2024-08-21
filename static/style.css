@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-size: small;
 }
 body{
     box-sizing: content-box;
@@ -15,15 +17,17 @@ body{
     display: flex;
 }
 .left{
-    width: 60%;
+    width: 63%;
+    color: rgb(184,185,185);
     height: 100vh;
     align-items: center;
+    background-color:  rgb(13,17,23);
 }
 .right{
     background-color: rgb(33,38,45);
     height: 100vh;
     display:grid;
-    width: 40%;
+    width: 37%;
 }
 .top{
     height: 100%;
@@ -36,39 +40,39 @@ body{
 }
 .heading{
     margin-top: 50px;
-    margin-left: 134px;
-    font-size: 40px;
+    /* margin-left: 177px; */
+    text-align: center;
+    font-size: 26px;
 }
 .video{
     margin-left:100px;
     margin-top: 20px;
 }
 .attendance{
-    margin-left: 150px;
+    margin-left: 70px;
     font-size: 30px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .data{
   background-color: rgb(43,49,55);
-    width: 400px;
-    height: 200px;
+    width: 340px;
+    height: 160px;
     overflow-x: auto;
     margin-top: 10px;
     padding: 20px;
     color: rgb(161, 156, 156);
-    margin-left: 150px;
+    margin-left: 70px;
 }
 .btn {
     background-color: DodgerBlue;
     border: none;
-    width: 400px;
-    padding: 15px 162.5px;
+    padding: 11px 125px;
     color: white;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    margin-left: 150px;
-    font-size: 20px;
+    margin-left: 70px;
+    font-size: 16px;
 }
   
   /* Darker background on mouse-over */
@@ -76,21 +80,21 @@ body{
     background-color: RoyalBlue;
   }
   .name{
-    margin-left: 150px;
+    margin-left: 70px;
     background-color:rgb(43,49,55) ;
     border: none;
-    width: 430px;
+    width: 340px;
     outline: none;
     color: rgb(206, 204, 204);
     padding-left: 10px;
-
     height: 40px;
     border-bottom: 2px solid rgb(27, 30, 34);
+    margin-top: 10px;
   }
   #file-upload{
-    margin-left: 150px;
-    width: 440px;
-    height: 200px;
+    margin-left: 70px;
+    width: 340px;
+    height: 170px;
     margin-top: 10px;
     background-color:rgb(43,49,55);
     color: rgb(29, 33, 37);
@@ -118,18 +122,20 @@ font-size: 14px;
   .image-submit{
     height: 45px;
     width: 140px;
-    margin-left: 240px;
-    font-size: large;
-    margin-top: 2px;
+    margin-left: 100px;
+    margin-top: 8px;
     background-color: DodgerBlue;
     border: none;
+    color: rgb(207, 207, 207);
+    font-size: 15px;
     cursor: pointer;
   }
   .live-submit{
     background-color: DodgerBlue;
     width: 140px;
     border: none;
-    font-size: large;
+    color: rgb(207, 207, 207);
+    font-size: 15px;
     height: 45px;
     cursor: pointer;
     margin-left: 10px;
@@ -137,24 +143,28 @@ font-size: 14px;
   }
   .open{
     width: 140px;
-    font-size: large;
     cursor: pointer;
     border: none;
     background-color: DodgerBlue;
     height: 45px;
-    margin-left: 290px;
+    margin-left: 240px;
+    color: rgb(207, 207, 207);
+    font-size: 15px;
     margin-top: 10px;
   }
   .stop{
     border: none;
     width: 140px;
-    font-size: large;
     background-color: DodgerBlue;
     cursor: pointer;
     height: 45px;
+    color: rgb(207, 207, 207);
     margin-left: 20px;
+    font-size: 15px;
     margin-top: 10px;
   }
   .add-image{
-    margin-left: 150px;
+    margin-left: 70px;
+    margin-top: px;
+    font-size: 16px;
   }

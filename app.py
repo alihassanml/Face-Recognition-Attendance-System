@@ -125,3 +125,8 @@ def stop_video():
     if cap.isOpened():
         cap.release()
     return {"message": "Video stopped"}
+
+
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)
