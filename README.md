@@ -1,4 +1,4 @@
-# Attendance System with Face Recognition
+# Face Recognition Attandance System
 
 This project uses FastAPI to deploy an attendance system integrated with face recognition. It captures live video from a webcam, detects faces, matches them with a pre-defined list of known faces, and marks attendance accordingly. 
 
@@ -21,7 +21,7 @@ This project uses FastAPI to deploy an attendance system integrated with face re
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/alihassanml/Attandance-System-Face-Recognition.git
+   git clone https://github.com/alihassanml/Face-Recognition-Attandance-System.git
    cd Attandance-System-Face-Recognition
    ```
 
