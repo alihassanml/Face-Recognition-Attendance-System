@@ -3,7 +3,7 @@ chardet
 click
 cmake
 decorator
-dlib
+dlib==19.24.0
 face-recognition
 idna
 imageio
