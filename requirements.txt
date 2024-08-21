@@ -19,5 +19,4 @@ urllib3
 wincertstore
 fastapi
 uvicorn
-opencv-python
 gunicorn
